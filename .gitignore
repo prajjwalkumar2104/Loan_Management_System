@@ -1,0 +1,15 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# TypeScript
+backend/dist/
+
+# Environment Variables
+backend/.env
+frontend/.env.local
+.env
