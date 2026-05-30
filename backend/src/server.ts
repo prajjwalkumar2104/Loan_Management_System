@@ -44,3 +44,6 @@ app.listen(PORT, async () => {
   await connectDB();
   console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
 });
+
+
+export default app;
