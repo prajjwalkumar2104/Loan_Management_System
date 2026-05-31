@@ -136,7 +136,7 @@ export default function CollectionDashboard() {
                   type="text"
                   required
                   placeholder="e.g., UTR9876543210"
-                  className="w-full border-gray-300 rounded-md shadow-sm p-3 border focus:ring-blue-500 focus:border-blue-500 uppercase"
+                  className="w-full border-gray-300 rounded-md text-black bg-white shadow-sm p-3 border focus:ring-blue-500 focus:border-blue-500 uppercase"
                   value={paymentData.utrNumber}
                   onChange={(e) => setPaymentData({ ...paymentData, utrNumber: e.target.value })}
                 />
@@ -151,7 +151,7 @@ export default function CollectionDashboard() {
                   min="1"
                   max={selectedLoan.totalRepayment}
                   placeholder="0.00"
-                  className="w-full border-gray-300 rounded-md shadow-sm p-3 border focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full border-gray-300 rounded-md text-black bg-white shadow-sm p-3 border focus:ring-blue-500 focus:border-blue-500"
                   value={paymentData.amount}
                   onChange={(e) => setPaymentData({ ...paymentData, amount: e.target.value })}
                 />

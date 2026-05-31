@@ -55,10 +55,19 @@ export default function ApplyLoanPage() {
     setStep(2);
   };
 
-  const submitApplication = async () => {
+  
+const submitApplication = async () => {
     setLoading(true);
     try {
-      await api.post('/loans/apply', formData);
+      // FORCE strings into actual Numbers before sending to backend
+      const payload = {
+        ...formData,
+        amount: Number(formData.amount),
+        tenureDays: Number(formData.tenureDays),
+        salary: Number(formData.salary),
+      };
+
+      await api.post('/loans/apply', payload);
       toast.success('Loan Applied Successfully!');
       router.push('/apply/success');
     } catch (error: any) {
