@@ -70,7 +70,7 @@ export default function ApplyLoanPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 flex justify-center">
-      <div className="max-w-2xl w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
+      <div className="max-w-2xl text-black w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
         
         {/* Progress Indicator */}
         <div className="flex justify-between border-b pb-4 mb-6">
@@ -149,8 +149,8 @@ export default function ApplyLoanPage() {
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 mt-6">
               <h3 className="font-semibold text-blue-900 border-b border-blue-200 pb-2 mb-2">Repayment Summary (12% p.a.)</h3>
-              <div className="flex justify-between mb-1"><span className="text-blue-800">Principal:</span> <span className="font-medium">₹{Number(formData.amount).toLocaleString()}</span></div>
-              <div className="flex justify-between mb-1"><span className="text-blue-800">Interest (SI):</span> <span className="font-medium">₹{calculations.si.toLocaleString()}</span></div>
+              <div className="flex justify-between mb-1"><span className="text-blue-800">Principal:</span> <span className="font-medium text-black">₹{Number(formData.amount).toLocaleString()}</span></div>
+              <div className="flex justify-between mb-1"><span className="text-blue-800">Interest (SI):</span> <span className="font-medium text-black">₹{calculations.si.toLocaleString()}</span></div>
               <div className="flex justify-between text-lg font-bold mt-2 pt-2 border-t border-blue-200"><span className="text-blue-900">Total Repayment:</span> <span className="text-blue-700">₹{calculations.total.toLocaleString()}</span></div>
             </div>
 
